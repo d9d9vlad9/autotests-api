@@ -7,7 +7,7 @@ def login(email: str, password: str) -> tuple[int, Any]:
     Функция для выполнения входа в систему и получения токена доступа.
     :param email: Email пользователя.
     :param password: Пароль пользователя.
-    :return: Вернет словарь с токенами доступа.
+    :return: Вернет статус код и словарь с токеном доступа.
     """
     login_payload = {
         "email": email,
@@ -25,7 +25,7 @@ def get_user_me(access_token: str) -> tuple[int, Any]:
     """
     Функция для получения информации о текущем пользователе.
     :param access_token: JWT токен доступа.
-    :return: Вернет словарь с информацией о пользователе.
+    :return: Вернет статус код и словарь с информацией о пользователе.
     """
     headers_with_token = {
         "Authorization": f"Bearer {access_token}"
@@ -39,9 +39,9 @@ def get_user_me(access_token: str) -> tuple[int, Any]:
         exit(1)
 
 
+if __name__ == "__main__":
+    login_data = login("dopgor555@gmail.com", "123123g")
+    user_me_data = get_user_me(login_data[1].get("token").get("accessToken"))
 
-login_data = login("dopgor555@gmail.com", "123123g")
-user_me_data = get_user_me(login_data[1].get("token").get("accessToken"))
-
-print(login_data)
-print(user_me_data)
+    print(login_data)
+    print(user_me_data)
