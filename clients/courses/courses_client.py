@@ -1,5 +1,5 @@
 from clients.api_clients import APIClient
-from httpx import Response
+from httpx import Client, Response
 from typing import TypedDict
 
 
@@ -32,9 +32,9 @@ class UpdateCourseRequestDict(TypedDict):
     estimatedTime: str | None
 
 class CoursesClient(APIClient):
-    def __init__(self, client):
+    def __init__(self, client: Client, base_url: str = "http://localhost:8000/api/v1/courses"):
         super().__init__(client)
-        self.base_url = "http://localhost:8000/api/v1/courses"
+        self.base_url = base_url
 
     def get_courses_api(self, query: GetCoursesQueryDict) -> Response:
         """
@@ -43,7 +43,7 @@ class CoursesClient(APIClient):
         :param query: userId.
         :return: Ответ от сервера.
         """
-        return self.get(f"{self.base_url}", params=query)
+        return self.get(self.base_url, params=query)
 
     def get_course_api(self, course_id: str) -> Response:
         """
@@ -61,7 +61,7 @@ class CoursesClient(APIClient):
         :param request: Данные для создания курса. Словарь с ключами: title, maxScore, minScore, description, estimatedTime, previewFileId, createdByUserId.
         :return: Ответ от сервера.
         """
-        return self.post(f"{self.base_url}", json=request)
+        return self.post(self.base_url, json=request)
 
     def update_course_api(self, course_id: str, request: UpdateCourseRequestDict) -> Response:
         """

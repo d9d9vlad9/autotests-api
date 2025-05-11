@@ -1,8 +1,8 @@
 from clients.api_clients import APIClient
-from httpx import Response
+from httpx import Client, Response
 from typing import TypedDict
 
-class LoginRequest(TypedDict):
+class LoginRequestDict(TypedDict):
     """
     Тип данных для запроса на вход в систему.
     """
@@ -19,11 +19,11 @@ class AuthenticationClient(APIClient):
     """
     Клиент для работы с API аутентификации.
     """
-    def __init__(self, client):
+    def __init__(self, client: Client, base_url: str = "http://localhost:8000/api/v1/authentication"):
         super().__init__(client)
-        self.base_url = "http://localhost:8000/api/v1/authentication"
+        self.base_url = base_url
 
-    def login_api(self, request: LoginRequest) -> Response:
+    def login_api(self, request: LoginRequestDict) -> Response:
         """
         Выполняет запрос на вход в систему и получение токена доступа.
 

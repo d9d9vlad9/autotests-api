@@ -1,5 +1,5 @@
 from clients.api_clients import APIClient
-from httpx import Response
+from httpx import Client, Response
 from typing import TypedDict
 
 class UpdateUserRequestDict(TypedDict):
@@ -16,9 +16,9 @@ class PrivateUsersClient(APIClient):
     """
     Клиент для работы с API пользователей.
     """
-    def __init__(self, client):
+    def __init__(self, client: Client, base_url: str = "http://localhost:8000/api/v1/users"):
         super().__init__(client)
-        self.base_url = "http://localhost:8000/api/v1/users"
+        self.base_url = base_url
 
     def get_users_me_api(self) -> Response:
         """

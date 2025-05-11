@@ -1,5 +1,5 @@
 from clients.api_clients import APIClient
-from httpx import Response
+from httpx import Client, Response
 from typing import TypedDict
 
 
@@ -15,9 +15,9 @@ class FilesClient(APIClient):
     """
     Клиент для работы с API файлов.
     """
-    def __init__(self, client):
+    def __init__(self, client: Client, base_url: str = "http://localhost:8000/api/v1/files"):
         super().__init__(client)
-        self.base_url = "http://localhost:8000/api/v1/files"
+        self.base_url = base_url
 
     def get_files_api(self, file_id: str) -> Response:
         """
