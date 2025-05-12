@@ -1,5 +1,5 @@
 from clients.api_clients import APIClient
-from httpx import Client, Response
+from httpx import Response
 from typing import TypedDict
 
 
@@ -34,12 +34,8 @@ class UpdateExerciseRequestDict(TypedDict):
 
 class ExercisesClient(APIClient):
     """
-    Клиент для работы с API упражнений.
+    Клиент для работы с API упражнений. Методы: GET /api/v1/exercises, GET /api/v1/exercises/{exerciseId}, POST /api/v1/exercises, PATCH /api/v1/exercises/{exerciseId}, DELETE /api/v1/exercises/{exerciseId}.
     """
-    def __init__(self, client: Client, base_url: str = "http://localhost:8000/api/v1/exercises"):
-        super().__init__(client)
-        self.base_url = base_url
-
     def get_exercises_api(self, query: GetExercisesQueryDict) -> Response:
         """
         Выполняет запрос на получение упражнения по его ID.
@@ -47,7 +43,7 @@ class ExercisesClient(APIClient):
         :param query: courseId для получения списка упражнений.
         :return: Ответ от сервера.
         """
-        return self.get(self.base_url, params=query)
+        return self.get("/api/v1/exercises", params=query)
 
     def get_exercise_api(self, exercise_id: str) -> Response:
         """
@@ -56,7 +52,7 @@ class ExercisesClient(APIClient):
         :param exercise_id: ID упражнения.
         :return: Ответ от сервера.
         """
-        return self.get(f"{self.base_url}/{exercise_id}")
+        return self.get(f"/api/v1/exercises/{exercise_id}")
 
     def create_exercise_api(self, request: CreateExerciseRequestDict) -> Response:
         """
@@ -65,7 +61,7 @@ class ExercisesClient(APIClient):
         :param request: Данные для создания упражнения.
         :return: Ответ от сервера.
         """
-        return self.post(self.base_url, json=request)
+        return self.post('/api/v1/exercises', json=request)
 
     def update_exercise_api(self, exercise_id: str, request: UpdateExerciseRequestDict) -> Response:
         """
@@ -75,7 +71,7 @@ class ExercisesClient(APIClient):
         :param request: Данные для обновления упражнения.
         :return: Ответ от сервера.
         """
-        return self.patch(f"{self.base_url}/{exercise_id}", json=request)
+        return self.patch(f"/api/v1/exercises/{exercise_id}", json=request)
 
     def delete_exercise_api(self, exercise_id: str) -> Response:
         """
@@ -84,4 +80,4 @@ class ExercisesClient(APIClient):
         :param exercise_id: ID упражнения.
         :return: Ответ от сервера.
         """
-        return self.delete(f"{self.base_url}/{exercise_id}")
+        return self.delete(f"/api/v1/exercises/{exercise_id}")

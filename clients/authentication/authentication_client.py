@@ -1,6 +1,15 @@
 from clients.api_clients import APIClient
-from httpx import Client, Response
+from httpx import Response
 from typing import TypedDict
+from clients.public_http_builder import get_public_http_client
+
+class Token(TypedDict):
+    """
+    Тип данных для токена доступа.
+    """
+    tokenType: str
+    accessToken: str
+    refreshToken: str
 
 class LoginRequestDict(TypedDict):
     """
@@ -8,6 +17,12 @@ class LoginRequestDict(TypedDict):
     """
     email: str
     password: str
+
+class LoginResponseDict(TypedDict):
+    """
+    Тип данных для ответа на запрос входа в систему.
+    """
+    token: Token
 
 class RefreshRequestDict(TypedDict):
     """
@@ -17,12 +32,8 @@ class RefreshRequestDict(TypedDict):
 
 class AuthenticationClient(APIClient):
     """
-    Клиент для работы с API аутентификации.
+    Клиент для работы с API аутентификации. Методы: POST /api/v1/authentication/login, POST /api/v1/authentication/refresh.
     """
-    def __init__(self, client: Client, base_url: str = "http://localhost:8000/api/v1/authentication"):
-        super().__init__(client)
-        self.base_url = base_url
-
     def login_api(self, request: LoginRequestDict) -> Response:
         """
         Выполняет запрос на вход в систему и получение токена доступа.
@@ -30,7 +41,7 @@ class AuthenticationClient(APIClient):
         :param request: Данные для входа в систему.
         :return: Ответ от сервера.
         """
-        return self.post(f"{self.base_url}/login", json=request)
+        return self.post("/api/v1/authentication/login", json=request)
 
     def refresh_api(self, request: RefreshRequestDict) -> Response:
         """
@@ -39,4 +50,22 @@ class AuthenticationClient(APIClient):
         :param request: Данные для обновления токена.
         :return: Ответ от сервера.
         """
-        return self.post(f"{self.base_url}/refresh", json=request)
+        return self.post("/api/v1/authentication/refresh", json=request)
+
+    def login(self, request: LoginRequestDict) -> LoginResponseDict:
+        """
+        Выполняет запрос на вход в систему и возвращает токен доступа.
+
+        :param request: Данные для входа в систему.
+        :return: Авторизационный токен.
+        """
+        response = self.login_api(request)
+        return response.json()
+
+def get_authentication_client() -> AuthenticationClient:
+    """
+    Возвращает экземпляр клиента для работы с API аутентификации.
+
+    :return: Экземпляр AuthenticationClient.
+    """
+    return AuthenticationClient(client=get_public_http_client())

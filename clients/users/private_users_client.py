@@ -1,6 +1,24 @@
 from clients.api_clients import APIClient
-from httpx import Client, Response
+from httpx import Response
 from typing import TypedDict
+from clients.private_http_builder import AuthenticationUserDict, get_private_http_client
+
+
+class User(TypedDict):
+    """
+    Тип данных для пользователя.
+    """
+    id: str
+    email: str
+    lastName: str
+    firstName: str
+    middleName: str
+
+class GetUserResponseDict(TypedDict):
+    """
+    Тип данных для ответа на запрос получения информации о пользователе.
+    """
+    user: User
 
 class UpdateUserRequestDict(TypedDict):
     """
@@ -14,19 +32,15 @@ class UpdateUserRequestDict(TypedDict):
 
 class PrivateUsersClient(APIClient):
     """
-    Клиент для работы с API пользователей.
+    Клиент для работы с API пользователей. Методы: GET /api/v1/users/me, GET /api/v1/users/{userId}, PATCH /api/v1/users/{userId}, DELETE /api/v1/users/{userId}.
     """
-    def __init__(self, client: Client, base_url: str = "http://localhost:8000/api/v1/users"):
-        super().__init__(client)
-        self.base_url = base_url
-
     def get_users_me_api(self) -> Response:
         """
         Выполняет запрос на получение информации о текущем пользователе.
 
         :return: Ответ от сервера.
         """
-        return self.get(f"{self.base_url}/me")
+        return self.get("api/v1/users/me")
 
     def get_user_api(self, user_id: str) -> Response:
         """
@@ -35,7 +49,7 @@ class PrivateUsersClient(APIClient):
         :param user_id: ID пользователя.
         :return: Ответ от сервера.
         """
-        return self.get(f"{self.base_url}/{user_id}")
+        return self.get(f"api/v1/users/{user_id}")
 
     def update_user_api(self, user_id: str, request) -> Response:
         """
@@ -45,7 +59,7 @@ class PrivateUsersClient(APIClient):
         :param request: Данные для обновления.
         :return: Ответ от сервера.
         """
-        return self.patch(f"{self.base_url}/{user_id}", json=request)
+        return self.patch(f"api/v1/users/{user_id}", json=request)
 
     def delete_user_api(self, user_id: str) -> Response:
         """
@@ -54,4 +68,23 @@ class PrivateUsersClient(APIClient):
         :param user_id: ID пользователя.
         :return: Ответ от сервера.
         """
-        return self.delete(f"{self.base_url}/{user_id}")
+        return self.delete(f"api/v1/users/{user_id}")
+
+    def get_user(self, user_id: str) -> GetUserResponseDict:
+        """
+        Выполняет запрос на получение информации о пользователе и возвращает ответ в виде словаря.
+
+        :param user_id: ID пользователя.
+        :return: Ответ от сервера в виде словаря.
+        """
+        response = self.get_user_api(user_id)
+        return response.json()
+
+def get_private_users_client(user: AuthenticationUserDict) -> PrivateUsersClient:
+    """
+    Возвращает экземпляр клиента для работы с API пользователей.
+
+    :param user: Данные для аутентификации пользователя.
+    :return: Экземпляр PrivateUsersClient.
+    """
+    return PrivateUsersClient(client=get_private_http_client(user))
