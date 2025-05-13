@@ -3,7 +3,7 @@ from clients.files.files_client import get_files_client
 from clients.private_http_builder import AuthenticationUserSchema
 from clients.users.public_users_client import get_public_users_client
 from clients.files.files_schema import CreateFileRequestSchema
-from pydantic_create_user import CreateUserRequestSchema
+from clients.users.users_schema import CreateUserRequestSchema
 from clients.courses.courses_schema import CreateCourseRequestSchema
 from tools.fakers import get_random_email
 
@@ -12,7 +12,7 @@ public_user_client = get_public_users_client()
 create_user_request = CreateUserRequestSchema(
     email=get_random_email(),
     password="string",
-    lastName="string",
+    last_name="string",
     firstName="string",
     middleName="string"
 )
