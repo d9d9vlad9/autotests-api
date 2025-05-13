@@ -1,4 +1,4 @@
-from pydantic import BaseModel, EmailStr, Field
+from pydantic import BaseModel, EmailStr, Field, ConfigDict
 from uuid import uuid4
 from tools.fakers import get_random_email
 
@@ -7,6 +7,8 @@ class User(BaseModel):
     """
     Базовая модель пользователя.
     """
+    model_config = ConfigDict(populate_by_name=True)
+
     email: EmailStr = Field(default=get_random_email())
     last_name: str = Field(alias="lastName", default="Doe")
     first_name: str = Field(alias="firstName", default="John")
