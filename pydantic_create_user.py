@@ -1,6 +1,6 @@
 from pydantic import BaseModel, EmailStr, Field, ConfigDict
 from uuid import uuid4
-from tools.fakers import get_random_email
+from tools.fakers import fake
 
 
 class User(BaseModel):
@@ -9,7 +9,7 @@ class User(BaseModel):
     """
     model_config = ConfigDict(populate_by_name=True)
 
-    email: EmailStr = Field(default=get_random_email())
+    email: EmailStr = Field(default=fake.email())
     last_name: str = Field(alias="lastName", default="Doe")
     first_name: str = Field(alias="firstName", default="John")
     middle_name: str = Field(alias="middleName", default="Q")

@@ -1,5 +1,5 @@
 import httpx
-from tools.fakers import get_random_email
+from tools.fakers import fake
 from typing import Any
 from httpx_get_user_me import login
 
@@ -9,7 +9,7 @@ def create_user() -> tuple[int, Any]:
     :return: Вернет словарь с информацией о созданном пользователе.
     """
     create_payload = {
-        "email": get_random_email(),
+        "email": fake.email(),
         "password": "string",
         "lastName": "string",
         "firstName": "string",
