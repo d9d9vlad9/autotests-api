@@ -1,4 +1,4 @@
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, EmailStr
 from tools.fakers import fake
 
 
@@ -14,7 +14,7 @@ class LoginRequestSchema(BaseModel):
     """
     Тип данных для запроса на вход в систему.
     """
-    email: str = Field(default_factory=fake.email)
+    email: EmailStr = Field(default_factory=fake.email)
     password: str = Field(default_factory=fake.password)
 
 class LoginResponseSchema(BaseModel):
