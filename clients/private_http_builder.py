@@ -1,14 +1,16 @@
 from httpx import Client
-from pydantic import BaseModel, EmailStr
+from pydantic import BaseModel, EmailStr, ConfigDict
 from clients.authentication.authentication_client import get_authentication_client
 from clients.authentication.authentication_schema import LoginRequestSchema
 from functools import lru_cache
 
 
-class AuthenticationUserSchema(BaseModel, frozen=True):
+class AuthenticationUserSchema(BaseModel):
     """
     Тип данных для пользователя аутентификации.
     """
+    model_config = ConfigDict(frozen=True)
+
     email: EmailStr
     password: str
 
