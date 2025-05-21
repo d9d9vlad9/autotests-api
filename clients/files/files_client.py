@@ -8,7 +8,7 @@ class FilesClient(APIClient):
     """
     Клиент для работы с API файлов. Методы: GET /api/v1/files, GET /api/v1/files/{fileId}, POST /api/v1/files, DELETE /api/v1/files/{fileId}.
     """
-    def get_files_api(self, file_id: str) -> Response:
+    def get_file_api(self, file_id: str) -> Response:
         """
         Выполняет запрос на получение файла.
 
