@@ -54,7 +54,10 @@ class TestCourses:
         """
         Проверяет создание курса.
         """
-        request = function_course.request
+        request = CreateCourseRequestSchema(
+            preview_file_id=function_file.response.file.id,
+            created_by_user_id=function_user.response.user.id
+        )
         response = courses_client.create_course_api(request)
         response_data = CreateCourseResponseSchema.model_validate_json(response.text)
 
