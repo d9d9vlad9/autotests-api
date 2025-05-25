@@ -8,7 +8,7 @@ class Exercise(BaseModel):
     """
     model_config = ConfigDict(populate_by_name=True)
 
-class ExerciseSchema(BaseModel):
+class ExercisesSchema(BaseModel):
     """
     Тип данных для упражнения.
     """
@@ -25,13 +25,13 @@ class CreateExerciseResponseSchema(Exercise):
     """
     Тип данных для ответа на запрос создания упражнения.
     """
-    exercise: ExerciseSchema
+    exercise: ExercisesSchema
 
 class GetExercisesResponseSchema(Exercise):
     """
     Тип данных для ответа на запрос получения упражнения.
     """
-    exercise: list[ExerciseSchema]
+    exercise: list[ExercisesSchema]
 
 class GetExercisesQuerySchema(Exercise):
     """
