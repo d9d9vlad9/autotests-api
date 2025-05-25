@@ -1,6 +1,8 @@
+from clients.errors_schema import InternalErrorResponseSchema
 from clients.exercises.exercises_schema import CreateExerciseResponseSchema, CreateExerciseRequestSchema, \
     ExercisesSchema, UpdateExerciseResponseSchema, UpdateExerciseRequestSchema
 from tools.assertions.base import assert_equal
+from tools.assertions.errors import assert_internal_error_response
 
 
 def assert_create_exercise_response(
@@ -70,3 +72,15 @@ def assert_update_exercise_response(request: UpdateExerciseRequestSchema, respon
     assert_equal(response.exercise.description, request.description, "description")
     assert_equal(response.exercise.estimated_time, request.estimated_time, "estimatedTime")
     assert_equal(response.exercise.order_index, request.order_index, "orderIndex")
+
+def assert_exercise_not_found_response(actual: InternalErrorResponseSchema):
+    """
+    Проверяет, что ответ на запрос несуществующего упражнения соответствует ожидаемому ответу об ошибке 404.
+
+    :param actual: Ответ от API с ошибкой, который необходимо проверить.
+    :raises AssertionError: Если фактический ответ не соответствует ожидаемому.
+    """
+    # Ожидаемое сообщение об ошибке, если файл не найден
+    expected = InternalErrorResponseSchema(details="Exercise not found")
+    # Используем ранее созданную функцию для проверки внутренней ошибки
+    assert_internal_error_response(actual, expected)
