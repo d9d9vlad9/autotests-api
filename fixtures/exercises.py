@@ -34,6 +34,8 @@ def function_exercise(
     :param function_course: Созданный курс.
     :return: Модель запроса и ответа на создание упражнения.
     """
-    request = CreateExerciseRequestSchema()
+    request = CreateExerciseRequestSchema(
+        courseId=function_course.response.course.id
+    )
     response = exercises_client.create_exercise(request)
     return ExerciseFixture(request=request, response=response)

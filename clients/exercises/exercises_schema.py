@@ -31,7 +31,7 @@ class GetExercisesResponseSchema(Exercise):
     """
     Тип данных для ответа на запрос получения упражнения.
     """
-    exercise: list[ExercisesSchema]
+    exercises: list[ExercisesSchema]
 
 class GetExercisesQuerySchema(Exercise):
     """
