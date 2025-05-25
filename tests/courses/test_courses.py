@@ -6,6 +6,7 @@ from clients.courses.courses_client import CoursesClient
 from clients.courses.courses_schema import UpdateCourseRequestSchema, UpdateCourseResponseSchema, GetCoursesQuerySchema, \
     GetCoursesResponseSchema, CreateCourseResponseSchema, CreateCourseRequestSchema
 from fixtures.courses import CourseFixture
+from fixtures.files import FileFixture
 from fixtures.users import UserFixture
 from tools.assertions.base import assert_status_code
 from tools.assertions.courses import assert_update_course_response, assert_get_courses_response, \
@@ -50,7 +51,12 @@ class TestCourses:
 
         validate_json_schema(response.json(), response_data.model_json_schema())
 
-    def test_create_course(self, courses_client: CoursesClient, function_course: CourseFixture):
+    def test_create_course(
+            self,
+            courses_client: CoursesClient,
+            function_user: UserFixture,
+            function_file: FileFixture
+    ):
         """
         Проверяет создание курса.
         """
