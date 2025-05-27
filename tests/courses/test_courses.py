@@ -24,6 +24,8 @@ from tools.assertions.schema import validate_json_schema
 @allure.tag(AllureTag.REGRESSION, AllureTag.COURSES)
 @allure.epic(AllureEpic.LMS)
 @allure.feature(AllureFeature.COURSES)
+@allure.parent_suite(AllureEpic.LMS)
+@allure.suite(AllureFeature.COURSES)
 class TestCourses:
     """
     Тесты для проверки функциональности курсов.
@@ -31,6 +33,7 @@ class TestCourses:
     @allure.title("Get courses")
     @allure.tag(AllureTag.GET_ENTITY)
     @allure.story(AllureStory.GET_ENTITY)
+    @allure.sub_suite(AllureStory.GET_ENTITY)
     @allure.severity(Severity.BLOCKER)
     def test_get_courses(self,
                          courses_client: CoursesClient,
@@ -52,6 +55,7 @@ class TestCourses:
     @allure.title("Update course")
     @allure.tag(AllureTag.UPDATE_ENTITIES)
     @allure.story(AllureStory.UPDATE_ENTITY)
+    @allure.sub_suite(AllureStory.UPDATE_ENTITY)
     @allure.severity(Severity.CRITICAL)
     def test_update_course(self, courses_client: CoursesClient, function_course: CourseFixture):
         """
@@ -70,6 +74,7 @@ class TestCourses:
     @allure.title("Create course")
     @allure.tag(AllureTag.CREATE_ENTITIES)
     @allure.story(AllureStory.CREATE_ENTITY)
+    @allure.sub_suite(AllureStory.CREATE_ENTITY)
     @allure.severity(Severity.BLOCKER)
     def test_create_course(
             self,
