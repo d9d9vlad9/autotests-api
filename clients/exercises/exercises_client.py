@@ -1,24 +1,25 @@
+import allure
 from clients.api_clients import APIClient
 from httpx import Response
 from clients.exercises.exercises_schema import GetExercisesQuerySchema, UpdateExerciseRequestSchema, CreateExerciseResponseSchema, CreateExerciseRequestSchema, GetExercisesResponseSchema
 from clients.private_http_builder import get_private_http_client, AuthenticationUserSchema
 
 
-
-
 class ExercisesClient(APIClient):
     """
     Клиент для работы с API упражнений. Методы: GET /api/v1/exercises, GET /api/v1/exercises/{exerciseId}, POST /api/v1/exercises, PATCH /api/v1/exercises/{exerciseId}, DELETE /api/v1/exercises/{exerciseId}.
     """
+    @allure.step("Get exercises")
     def get_exercises_api(self, query: GetExercisesQuerySchema) -> Response:
         """
-        Выполняет запрос на получение упражнения по его ID.
+        Выполняет запрос на получение списка упражнений.
 
         :param query: courseId для получения списка упражнений.
         :return: Ответ от сервера.
         """
         return self.get("/api/v1/exercises", params=query.model_dump(by_alias=True))
 
+    @allure.step("Get exercise by id {exercise_id}")
     def get_exercise_api(self, exercise_id: str) -> Response:
         """
         Выполняет запрос на получение упражнения по его ID.
@@ -28,6 +29,7 @@ class ExercisesClient(APIClient):
         """
         return self.get(f"/api/v1/exercises/{exercise_id}")
 
+    @allure.step("Create exercise")
     def create_exercise_api(self, request: CreateExerciseRequestSchema) -> Response:
         """
         Выполняет запрос на создание упражнения.
@@ -37,6 +39,7 @@ class ExercisesClient(APIClient):
         """
         return self.post('/api/v1/exercises', json=request.model_dump(by_alias=True))
 
+    @allure.step("Update exercise by id {exercise_id}")
     def update_exercise_api(self, exercise_id: str, request: UpdateExerciseRequestSchema) -> Response:
         """
         Выполняет запрос на обновление упражнения.
@@ -47,6 +50,7 @@ class ExercisesClient(APIClient):
         """
         return self.patch(f"/api/v1/exercises/{exercise_id}", json=request.model_dump(by_alias=True))
 
+    @allure.step("Delete exercise by id {exercise_id}")
     def delete_exercise_api(self, exercise_id: str) -> Response:
         """
         Выполняет запрос на удаление упражнения.
