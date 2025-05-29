@@ -3,6 +3,7 @@ from clients.users.users_schema import CreateUserRequestSchema, CreateUserRespon
 from clients.api_clients import APIClient
 from clients.public_http_builder import get_public_http_client
 from httpx import Response
+from tools.routes import APIRoutes
 
 
 class PublicUsersClient(APIClient):
@@ -18,7 +19,7 @@ class PublicUsersClient(APIClient):
         :param request: Данные для создания пользователя.
         :return: Ответ от сервера.
         """
-        return self.post("/api/v1/users", json=request.model_dump(by_alias=True))
+        return self.post(APIRoutes.USERS, json=request.model_dump(by_alias=True))
 
     def create_user(self, request: CreateUserRequestSchema) -> CreateUserResponseSchema:
         """
