@@ -46,13 +46,6 @@ jobs:
         run: |
           pytest -m regression
 
-      - name: Upload Allure results
-        uses: actions/upload-artifact@v4
-        with:
-          name: allure-results
-          path: build/allure-results
-
-
   publish-report:
     needs: run-tests
     runs-on: ubuntu-latest
