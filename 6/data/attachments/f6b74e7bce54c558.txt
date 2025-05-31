@@ -1,0 +1,11 @@
+curl -X 'POST' \
+'http://localhost:8000/api/v1/courses' \
+-H 'host: localhost:8000' \
+-H 'accept: */*' \
+-H 'accept-encoding: gzip, deflate' \
+-H 'connection: keep-alive' \
+-H 'user-agent: python-httpx/0.28.1' \
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA1LTMxVDIxOjA5OjMwLjYwOTg3OSIsInVzZXJfaWQiOiJhZTMxNThkNi0zN2MyLTQ5MGMtYTQ4Ni1iOGFjMjU2MGM1OTQifQ.BKNrlsqQR1mQEc456dVZs9xY91VHjFnF5DPvkkXNN00' \
+-H 'content-length: 401' \
+-H 'content-type: application/json' \
+-d '{"title":"Food already prevent ready ground.","maxScore":61,"minScore":13,"description":"Who support order month debate. Deal hour good try lot question.\nSea sign money drug. Fall agree training under Democrat itself hand. Within stay policy difference though.","estimatedTime":"9 weeks","previewFileId":"9a883a60-372a-495b-9380-3db390c9c9aa","createdByUserId":"ae3158d6-37c2-490c-a486-b8ac2560c594"}'

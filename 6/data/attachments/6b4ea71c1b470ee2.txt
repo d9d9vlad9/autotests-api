@@ -1,0 +1,11 @@
+curl -X 'POST' \
+'http://localhost:8000/api/v1/courses' \
+-H 'host: localhost:8000' \
+-H 'accept: */*' \
+-H 'accept-encoding: gzip, deflate' \
+-H 'connection: keep-alive' \
+-H 'user-agent: python-httpx/0.28.1' \
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA1LTMxVDIxOjA5OjMzLjUxOTM5NyIsInVzZXJfaWQiOiIxNWU2M2I4NS04NWFiLTQyYjItOGIzOC1jYjJhYTRlZjkyYjIifQ.NVTXro_3gKw1l5Cwitu94-335EEqdFM3iuZYiJ2PJPo' \
+-H 'content-length: 362' \
+-H 'content-type: application/json' \
+-d '{"title":"Story its nothing painting center movie.","maxScore":70,"minScore":10,"description":"Kind six else hotel. Teach class thus detail because movie Democrat poor. Effect through debate better course speech anything.","estimatedTime":"10 weeks","previewFileId":"7eb615af-a709-4a87-858b-940b81736861","createdByUserId":"15e63b85-85ab-42b2-8b38-cb2aa4ef92b2"}'

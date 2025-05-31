@@ -1,0 +1,11 @@
+curl -X 'POST' \
+'http://localhost:8000/api/v1/courses' \
+-H 'host: localhost:8000' \
+-H 'accept: */*' \
+-H 'accept-encoding: gzip, deflate' \
+-H 'connection: keep-alive' \
+-H 'user-agent: python-httpx/0.28.1' \
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA1LTMxVDIxOjA5OjMzLjIzNjYwMiIsInVzZXJfaWQiOiJjZmQ4ODZjMy1hNDA4LTQzNWMtODk3My1kNjBlZTVhYWEyZjMifQ.bdMCGAKwIgxeNutyFPR53Iq47yeZEgwJ2j7CZXtnzo0' \
+-H 'content-length: 434' \
+-H 'content-type: application/json' \
+-d '{"title":"Attorney lawyer myself main however month.","maxScore":55,"minScore":12,"description":"Reduce risk something see room cell rather. Movement agree matter evidence together.\nHope activity together throughout. Stand ready scientist try expect stand. Available follow standard none fall.","estimatedTime":"1 weeks","previewFileId":"76165921-573d-4694-b1cf-4d8c3f477b66","createdByUserId":"cfd886c3-a408-435c-8973-d60ee5aaa2f3"}'

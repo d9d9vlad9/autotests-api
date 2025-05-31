@@ -1,0 +1,22 @@
+INFO     HTTP_LOGGER:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:33 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:33 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:33 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:33 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:33 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:25 Make PATCH request to http://localhost:8000/api/v1/exercises/f1e4f15b-2e78-44e8-ba59-0a2540a481f4
+INFO     HTTP_LOGGER:event_hooks.py:33 Got response 200 OK from http://localhost:8000/api/v1/exercises/f1e4f15b-2e78-44e8-ba59-0a2540a481f4
+INFO     BASE_ASSERTIONS:base.py:17 Chek that response status code equals to 200
+INFO     EXERCISE_ASSERTIONS:exercises.py:83 Check update exercise response
+INFO     BASE_ASSERTIONS:base.py:35 Chek that "title" equals to "Magazine court conference son enjoy experience."
+INFO     BASE_ASSERTIONS:base.py:35 Chek that "maxScore" equals to "54"
+INFO     BASE_ASSERTIONS:base.py:35 Chek that "minScore" equals to "29"
+INFO     BASE_ASSERTIONS:base.py:35 Chek that "description" equals to "Either consider consider mean industry analysis on challenge. Between police most state guy return beautiful.
+Meet ground television."
+INFO     BASE_ASSERTIONS:base.py:35 Chek that "estimatedTime" equals to "10 weeks"
+INFO     BASE_ASSERTIONS:base.py:35 Chek that "orderIndex" equals to "5"
+INFO     SCHEMA_ASSERTIONS:schema.py:19 Validate JSON schema

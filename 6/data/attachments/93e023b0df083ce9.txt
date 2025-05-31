@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+'http://localhost:8000/api/v1/exercises/f1e4f15b-2e78-44e8-ba59-0a2540a481f4' \
+-H 'host: localhost:8000' \
+-H 'accept: */*' \
+-H 'accept-encoding: gzip, deflate' \
+-H 'connection: keep-alive' \
+-H 'user-agent: python-httpx/0.28.1' \
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA1LTMxVDIxOjA5OjMwLjYwOTg3OSIsInVzZXJfaWQiOiJhZTMxNThkNi0zN2MyLTQ5MGMtYTQ4Ni1iOGFjMjU2MGM1OTQifQ.BKNrlsqQR1mQEc456dVZs9xY91VHjFnF5DPvkkXNN00' \
+-H 'content-length: 280' \
+-H 'content-type: application/json' \
+-d '{"title":"Magazine court conference son enjoy experience.","maxScore":54,"minScore":29,"orderIndex":5,"description":"Either consider consider mean industry analysis on challenge. Between police most state guy return beautiful.\nMeet ground television.","estimatedTime":"10 weeks"}'

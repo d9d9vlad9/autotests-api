@@ -1,0 +1,11 @@
+curl -X 'POST' \
+'http://localhost:8000/api/v1/courses' \
+-H 'host: localhost:8000' \
+-H 'accept: */*' \
+-H 'accept-encoding: gzip, deflate' \
+-H 'connection: keep-alive' \
+-H 'user-agent: python-httpx/0.28.1' \
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA1LTMxVDIxOjA5OjM0LjQyOTg3MSIsInVzZXJfaWQiOiIyODliOWE0Yi0xOTdlLTRlZDAtODJiNy0wYTkwM2RjNThhMTcifQ._vuq2uvo6zmPh5IaqfwTr70V78T-o_KJ6IA1FVAbRZs' \
+-H 'content-length: 341' \
+-H 'content-type: application/json' \
+-d '{"title":"Provide ok various paper.","maxScore":94,"minScore":22,"description":"Figure side most outside heavy. Office system read fear build term accept. Most science wrong development serious father.","estimatedTime":"6 weeks","previewFileId":"f63e276b-65a7-41e7-bd09-15a144857f21","createdByUserId":"289b9a4b-197e-4ed0-82b7-0a903dc58a17"}'

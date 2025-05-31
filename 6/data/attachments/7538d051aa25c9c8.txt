@@ -1,0 +1,11 @@
+curl -X 'POST' \
+'http://localhost:8000/api/v1/courses' \
+-H 'host: localhost:8000' \
+-H 'accept: */*' \
+-H 'accept-encoding: gzip, deflate' \
+-H 'connection: keep-alive' \
+-H 'user-agent: python-httpx/0.28.1' \
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA1LTMxVDIxOjA5OjMxLjQzMTc4OCIsInVzZXJfaWQiOiJiM2JkNTQ5NC0zZDM2LTQ5YjktOGMwOC1mMzllMWNiNjc4ZDUifQ.kJMjjj8ZZdY2mhOEF1lWjBvTvWZfIWcRCwTwp1S1ZiI' \
+-H 'content-length: 350' \
+-H 'content-type: application/json' \
+-d '{"title":"Movement office crime TV experience.","maxScore":84,"minScore":23,"description":"Pretty imagine half once recognize. Half thing letter everyone when law anything. Later fly information science artist.","estimatedTime":"4 weeks","previewFileId":"8d7f191b-d355-4727-ba3a-8f409b091105","createdByUserId":"b3bd5494-3d36-49b9-8c08-f39e1cb678d5"}'
