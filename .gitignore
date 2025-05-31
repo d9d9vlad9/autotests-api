@@ -1,6 +1,13 @@
-# Игнорирование папки "temp"
-allure-results/
+# pycharm
+.idea
 
-# Игнорирование всех файлов с расширением .log
+# python
+.venv
+__pycache__
+
+# allure
+allure-results
+allure-report
+
+#log
 *.log
-
