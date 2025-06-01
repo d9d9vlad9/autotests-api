@@ -1,0 +1,11 @@
+curl -X 'POST' \
+'http://localhost:8000/api/v1/courses' \
+-H 'host: localhost:8000' \
+-H 'accept: */*' \
+-H 'accept-encoding: gzip, deflate' \
+-H 'connection: keep-alive' \
+-H 'user-agent: python-httpx/0.28.1' \
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA2LTAxVDE5OjQ4OjIwLjg4ODI1MCIsInVzZXJfaWQiOiJmNzI3N2ViMS0xY2JiLTQ3Y2UtYjk0My1kYjNhOTU3OGZkYzkifQ.nAH7V-4l-39QyQZ7AF1OA3plRArDj_7-SMuop3WbIYc' \
+-H 'content-length: 335' \
+-H 'content-type: application/json' \
+-d '{"title":"Prevent relate night hit.","maxScore":96,"minScore":24,"description":"Little such movie message stop threat.\nMain form section usually central trip.\nRace attorney effect serve police.","estimatedTime":"4 weeks","previewFileId":"640ccc02-fc1e-4c33-a8c0-fa11066b89ca","createdByUserId":"f7277eb1-1cbb-47ce-b943-db3a9578fdc9"}'

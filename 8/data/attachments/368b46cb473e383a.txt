@@ -1,0 +1,11 @@
+curl -X 'POST' \
+'http://localhost:8000/api/v1/courses' \
+-H 'host: localhost:8000' \
+-H 'accept: */*' \
+-H 'accept-encoding: gzip, deflate' \
+-H 'connection: keep-alive' \
+-H 'user-agent: python-httpx/0.28.1' \
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA2LTAxVDE5OjQ4OjI0LjA5MTI5OCIsInVzZXJfaWQiOiI2YzhiZjEzMS0xMTRlLTRiMzktYmVmNy00ZWRhYjhlYmU2ZDMifQ.RlVVG55j39XmEoYhggiTbPWt7pHn0Wc8OQGCwV_67-M' \
+-H 'content-length: 437' \
+-H 'content-type: application/json' \
+-d '{"title":"Common realize institution too weight administration only.","maxScore":51,"minScore":7,"description":"Finish new large budget high grow speak. Job room occur this couple size fine site. Want plant account create much itself.\nInside he notice make city. Though reveal southern meet fine.","estimatedTime":"9 weeks","previewFileId":"6d961952-3cea-4f14-9ab4-71023ef7876f","createdByUserId":"6c8bf131-114e-4b39-bef7-4edab8ebe6d3"}'

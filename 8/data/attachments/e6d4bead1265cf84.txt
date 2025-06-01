@@ -1,0 +1,23 @@
+INFO     HTTP_LOGGER:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:33 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:33 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:33 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:33 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:33 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:25 Make PATCH request to http://localhost:8000/api/v1/exercises/3dad4231-510a-4a99-9d10-3cc1be6161fd
+INFO     HTTP_LOGGER:event_hooks.py:33 Got response 200 OK from http://localhost:8000/api/v1/exercises/3dad4231-510a-4a99-9d10-3cc1be6161fd
+INFO     BASE_ASSERTIONS:base.py:17 Chek that response status code equals to 200
+INFO     EXERCISE_ASSERTIONS:exercises.py:83 Check update exercise response
+INFO     BASE_ASSERTIONS:base.py:35 Chek that "title" equals to "Program red enjoy serve church among management late."
+INFO     BASE_ASSERTIONS:base.py:35 Chek that "maxScore" equals to "72"
+INFO     BASE_ASSERTIONS:base.py:35 Chek that "minScore" equals to "17"
+INFO     BASE_ASSERTIONS:base.py:35 Chek that "description" equals to "Identify reason mouth notice lead.
+Enter every firm authority page he experience.
+Old despite seem tree theory campaign American. Action their game meeting. Air option water claim sign oil."
+INFO     BASE_ASSERTIONS:base.py:35 Chek that "estimatedTime" equals to "6 weeks"
+INFO     BASE_ASSERTIONS:base.py:35 Chek that "orderIndex" equals to "49"
+INFO     SCHEMA_ASSERTIONS:schema.py:19 Validate JSON schema

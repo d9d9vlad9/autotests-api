@@ -1,0 +1,19 @@
+INFO     HTTP_LOGGER:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:33 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:33 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:33 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:33 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     BASE_ASSERTIONS:base.py:17 Chek that response status code equals to 200
+INFO     COURSES_ASSERTIONS:courses.py:85 Check create course response
+INFO     BASE_ASSERTIONS:base.py:35 Chek that "title" equals to "Side firm but."
+INFO     BASE_ASSERTIONS:base.py:35 Chek that "max_score" equals to "65"
+INFO     BASE_ASSERTIONS:base.py:35 Chek that "min_score" equals to "2"
+INFO     BASE_ASSERTIONS:base.py:35 Chek that "description" equals to "Hotel see even today. Event less probably stuff enjoy population science.
+Record strong plan exist per choice. Before allow boy structure despite."
+INFO     BASE_ASSERTIONS:base.py:35 Chek that "estimated_time" equals to "6 weeks"
+INFO     BASE_ASSERTIONS:base.py:35 Chek that "preview_file_id" equals to "d5420bd6-4513-4115-b1cf-f9229146bd10"
+INFO     BASE_ASSERTIONS:base.py:35 Chek that "created_by_user_id" equals to "ac4754ba-c3f2-4520-9fe3-697766c67b0b"
+INFO     SCHEMA_ASSERTIONS:schema.py:19 Validate JSON schema
