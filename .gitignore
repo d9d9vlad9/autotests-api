@@ -11,3 +11,9 @@ allure-report
 
 #log
 *.log
+
+#coverage
+coverage.html
+coverage-results
+coverage-history.json
+coverage-report.json

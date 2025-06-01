@@ -3,6 +3,7 @@ from clients.api_clients import APIClient
 from httpx import Response
 from clients.users.users_schema import GetUserResponseSchema, UpdateUserRequestSchema, UpdateUserResponseSchema
 from clients.private_http_builder import AuthenticationUserSchema, get_private_http_client
+from clients.api_coverage import tracker
 from tools.routes import APIRoutes
 
 
@@ -11,15 +12,17 @@ class PrivateUsersClient(APIClient):
     Клиент для работы с API пользователей. Методы: GET /api/v1/users/me, GET /api/v1/users/{userId}, PATCH /api/v1/users/{userId}, DELETE /api/v1/users/{userId}.
     """
     @allure.step("Get user me")
+    @tracker.track_coverage_httpx(f"{APIRoutes.USERS}/me")
     def get_users_me_api(self) -> Response:
         """
         Выполняет запрос на получение информации о текущем пользователе.
 
         :return: Ответ от сервера.
         """
-        return self.get("api/v1/users/me")
+        return self.get(f"{APIRoutes.USERS}/me")
 
     @allure.step("Get user by id {user_id}")
+    @tracker.track_coverage_httpx(f"{APIRoutes.USERS}/{{user_id}}")
     def get_user_api(self, user_id: str) -> Response:
         """
         Выполняет запрос на получение информации о пользователе по его ID.
@@ -30,6 +33,7 @@ class PrivateUsersClient(APIClient):
         return self.get(f"{APIRoutes.USERS}/{user_id}")
 
     @allure.step("Update user by id {user_id}")
+    @tracker.track_coverage_httpx(f"{APIRoutes.USERS}/{{user_id}}")
     def update_user_api(self, user_id: str, request: UpdateUserRequestSchema) -> Response:
         """
         Выполняет запрос на обновление информации о пользователе.
@@ -41,6 +45,7 @@ class PrivateUsersClient(APIClient):
         return self.patch(f"{APIRoutes.USERS}/{user_id}", json=request.model_dump(by_alias=True))
 
     @allure.step("Delete user by id {user_id}")
+    @tracker.track_coverage_httpx(f"{APIRoutes.USERS}/{{user_id}}")
     def delete_user_api(self, user_id: str) -> Response:
         """
         Выполняет запрос на удаление пользователя.
