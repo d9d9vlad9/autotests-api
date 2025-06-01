@@ -1,0 +1,11 @@
+curl -X 'POST' \
+'http://localhost:8000/api/v1/courses' \
+-H 'host: localhost:8000' \
+-H 'accept: */*' \
+-H 'accept-encoding: gzip, deflate' \
+-H 'connection: keep-alive' \
+-H 'user-agent: python-httpx/0.28.1' \
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA2LTAxVDE5OjQ1OjM4LjkyNTk4MCIsInVzZXJfaWQiOiIxOTNiYTlhZC0xY2U4LTRhYzEtOWM4OC01YzJkMjkyMjJmNDMifQ.SyMcF5rUVVwAjbnOE7UuptoURwsH6QLbPfsML8oBGks' \
+-H 'content-length: 439' \
+-H 'content-type: application/json' \
+-d '{"title":"Well deal economic maintain whole sense part hit.","maxScore":78,"minScore":30,"description":"Agree commercial early ever raise. Responsibility our ability sport finally.\nIncrease everybody onto store. No activity government help house actually. Could color rich glass condition actually.","estimatedTime":"8 weeks","previewFileId":"518a503e-d4f9-4f31-bf47-93897f1e388b","createdByUserId":"193ba9ad-1ce8-4ac1-9c88-5c2d29222f43"}'

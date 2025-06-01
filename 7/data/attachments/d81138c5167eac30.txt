@@ -1,0 +1,24 @@
+INFO     HTTP_LOGGER:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:33 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     SWAGGER_COVERAGE_TRACKER_STORAGE:storage.py:34 Results directory does not exist, creating: /home/runner/work/autotests-api/autotests-api/coverage-results
+INFO     HTTP_LOGGER:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:33 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:33 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:33 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:33 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:25 Make PATCH request to http://localhost:8000/api/v1/exercises/42bf18df-cbb5-4f11-8aaf-91ea2cdfcdce
+INFO     HTTP_LOGGER:event_hooks.py:33 Got response 200 OK from http://localhost:8000/api/v1/exercises/42bf18df-cbb5-4f11-8aaf-91ea2cdfcdce
+INFO     BASE_ASSERTIONS:base.py:17 Chek that response status code equals to 200
+INFO     EXERCISE_ASSERTIONS:exercises.py:83 Check update exercise response
+INFO     BASE_ASSERTIONS:base.py:35 Chek that "title" equals to "Certain choice adult shoulder not leg."
+INFO     BASE_ASSERTIONS:base.py:35 Chek that "maxScore" equals to "84"
+INFO     BASE_ASSERTIONS:base.py:35 Chek that "minScore" equals to "27"
+INFO     BASE_ASSERTIONS:base.py:35 Chek that "description" equals to "Require reality again agree hot.
+Baby movie yet artist rate during. Adult through every positive.
+Room type experience her. What care local front across strategy. If own surface family."
+INFO     BASE_ASSERTIONS:base.py:35 Chek that "estimatedTime" equals to "3 weeks"
+INFO     BASE_ASSERTIONS:base.py:35 Chek that "orderIndex" equals to "15"
+INFO     SCHEMA_ASSERTIONS:schema.py:19 Validate JSON schema

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+'http://localhost:8000/api/v1/courses' \
+-H 'host: localhost:8000' \
+-H 'accept: */*' \
+-H 'accept-encoding: gzip, deflate' \
+-H 'connection: keep-alive' \
+-H 'user-agent: python-httpx/0.28.1' \
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA2LTAxVDE5OjQ1OjM4LjM2ODU4MiIsInVzZXJfaWQiOiIxOWFkY2Q0Zi0zOGI3LTRiODQtOWZhMC01ZmI5OGQzN2RkZmQifQ.MAhEwRw7e3XodgbxcaDM5H15gGwQpxuYNgpvDFqRv20' \
+-H 'content-length: 328' \
+-H 'content-type: application/json' \
+-d '{"title":"Goal feel need senior.","maxScore":100,"minScore":26,"description":"Stop son carry class view do. Million investment middle each become first. Anyone bad cup fund rate TV growth.","estimatedTime":"1 weeks","previewFileId":"9423ecd2-d6ca-49c4-9a85-c4c4bb12c891","createdByUserId":"19adcd4f-38b7-4b84-9fa0-5fb98d37ddfd"}'

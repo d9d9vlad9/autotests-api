@@ -1,0 +1,19 @@
+INFO     HTTP_LOGGER:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:33 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:33 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:33 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:33 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     BASE_ASSERTIONS:base.py:17 Chek that response status code equals to 200
+INFO     COURSES_ASSERTIONS:courses.py:85 Check create course response
+INFO     BASE_ASSERTIONS:base.py:35 Chek that "title" equals to "Will rule manage I."
+INFO     BASE_ASSERTIONS:base.py:35 Chek that "max_score" equals to "67"
+INFO     BASE_ASSERTIONS:base.py:35 Chek that "min_score" equals to "19"
+INFO     BASE_ASSERTIONS:base.py:35 Chek that "description" equals to "Morning lay political first care gas vote. Father treatment could month amount.
+Action Mr I good like ask. Already important truth learn. Month family game go."
+INFO     BASE_ASSERTIONS:base.py:35 Chek that "estimated_time" equals to "5 weeks"
+INFO     BASE_ASSERTIONS:base.py:35 Chek that "preview_file_id" equals to "e0d85abf-fbaa-4ade-b14c-c292b24f1e1d"
+INFO     BASE_ASSERTIONS:base.py:35 Chek that "created_by_user_id" equals to "e6341900-54c9-4c48-b294-e3f06ba792ee"
+INFO     SCHEMA_ASSERTIONS:schema.py:19 Validate JSON schema

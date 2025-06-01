@@ -1,0 +1,11 @@
+curl -X 'POST' \
+'http://localhost:8000/api/v1/courses' \
+-H 'host: localhost:8000' \
+-H 'accept: */*' \
+-H 'accept-encoding: gzip, deflate' \
+-H 'connection: keep-alive' \
+-H 'user-agent: python-httpx/0.28.1' \
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA2LTAxVDE5OjQ1OjM1LjQ1MTYzMyIsInVzZXJfaWQiOiJlMzA2NWVkNS1jZmNiLTRlMWYtYTkxZi04ZTA1YTM4MjdkMGIifQ.TytQsJRx2wlWGKPp5Z9-sr5V5Muh3Fo8nOyS6jYe90M' \
+-H 'content-length: 401' \
+-H 'content-type: application/json' \
+-d '{"title":"To economic enough official.","maxScore":85,"minScore":5,"description":"Have voice everybody play. Exist firm remain method. Growth most upon.\nAmount help point enter lose. Skill quickly moment yourself. Far often push firm option stage both feeling.","estimatedTime":"5 weeks","previewFileId":"91b5c333-f9f6-46c2-9029-40dbea13b80b","createdByUserId":"e3065ed5-cfcb-4e1f-a91f-8e05a3827d0b"}'

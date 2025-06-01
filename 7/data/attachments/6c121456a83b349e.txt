@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+'http://localhost:8000/api/v1/exercises/42bf18df-cbb5-4f11-8aaf-91ea2cdfcdce' \
+-H 'host: localhost:8000' \
+-H 'accept: */*' \
+-H 'accept-encoding: gzip, deflate' \
+-H 'connection: keep-alive' \
+-H 'user-agent: python-httpx/0.28.1' \
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA2LTAxVDE5OjQ1OjM1LjcyMDE3OSIsInVzZXJfaWQiOiJmMDQ0MzM4My02ODRjLTRiM2QtOTkxOC1hZGJiNmVmZWM5YjUifQ.xDl0fgxZTJSl2YatlLRTqHc6AOHU1Xz4iay3aEACsng' \
+-H 'content-length: 324' \
+-H 'content-type: application/json' \
+-d '{"title":"Certain choice adult shoulder not leg.","maxScore":84,"minScore":27,"orderIndex":15,"description":"Require reality again agree hot.\nBaby movie yet artist rate during. Adult through every positive.\nRoom type experience her. What care local front across strategy. If own surface family.","estimatedTime":"3 weeks"}'

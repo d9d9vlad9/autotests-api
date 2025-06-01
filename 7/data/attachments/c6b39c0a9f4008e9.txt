@@ -1,0 +1,11 @@
+curl -X 'POST' \
+'http://localhost:8000/api/v1/courses' \
+-H 'host: localhost:8000' \
+-H 'accept: */*' \
+-H 'accept-encoding: gzip, deflate' \
+-H 'connection: keep-alive' \
+-H 'user-agent: python-httpx/0.28.1' \
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA2LTAxVDE5OjQ1OjM2Ljg5ODYzMSIsInVzZXJfaWQiOiIxYzMyYmM0NC1lZmU1LTRmNTQtYTIzNi05OGNlNzIxNWQ1MTYifQ.trVSnG73qn9CRkN1KeZm43z5yrBi3iUVnirfePR5aSA' \
+-H 'content-length: 354' \
+-H 'content-type: application/json' \
+-d '{"title":"Our participant federal because put describe mission.","maxScore":93,"minScore":27,"description":"Whole mean language although safe model. Certain manage only night. List owner with call at environmental.","estimatedTime":"6 weeks","previewFileId":"2318513b-eddd-4df5-8d38-513105c9c906","createdByUserId":"1c32bc44-efe5-4f54-a236-98ce7215d516"}'
