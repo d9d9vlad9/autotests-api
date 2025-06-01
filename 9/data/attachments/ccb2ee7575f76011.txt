@@ -1,0 +1,11 @@
+curl -X 'POST' \
+'http://localhost:8000/api/v1/courses' \
+-H 'host: localhost:8000' \
+-H 'accept: */*' \
+-H 'accept-encoding: gzip, deflate' \
+-H 'connection: keep-alive' \
+-H 'user-agent: python-httpx/0.28.1' \
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA2LTAxVDIwOjAxOjQ5LjM0NTM3MCIsInVzZXJfaWQiOiJlMDAyYzM3OC1mODI1LTRkZDAtYmYyNy1kMzlhOGE4ZGFjNzUifQ.44bXAiPPXdc_NIfXjipKz25q1r7Itk5A5pTi13ja_-Y' \
+-H 'content-length: 420' \
+-H 'content-type: application/json' \
+-d '{"title":"Site special spend produce yet within.","maxScore":88,"minScore":6,"description":"Argue admit end body. Car call sense town. Surface sign half this final make.\nBlack court reduce ground owner operation base. Think billion admit simple event analysis education probably.","estimatedTime":"4 weeks","previewFileId":"87c66430-968f-4ea5-b311-09062a03f598","createdByUserId":"e002c378-f825-4dd0-bf27-d39a8a8dac75"}'

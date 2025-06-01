@@ -1,0 +1,11 @@
+curl -X 'POST' \
+'http://localhost:8000/api/v1/courses' \
+-H 'host: localhost:8000' \
+-H 'accept: */*' \
+-H 'accept-encoding: gzip, deflate' \
+-H 'connection: keep-alive' \
+-H 'user-agent: python-httpx/0.28.1' \
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA2LTAxVDIwOjAxOjUyLjI0Njc0MCIsInVzZXJfaWQiOiIyYmUzNmE4Yi0yMzYxLTQ2OTQtOGQ0My02NDQwYWJkYzJkZjgifQ.aVujAFXPv1xqWvi507nILcwQS9i1-ymPw71rf-M7M2U' \
+-H 'content-length: 334' \
+-H 'content-type: application/json' \
+-d '{"title":"Alone serious baby part risk.","maxScore":58,"minScore":18,"description":"Lead condition beat cut before perhaps officer. Spend same network power energy support. Whom year whole live.","estimatedTime":"9 weeks","previewFileId":"25aa984a-a608-42ba-b971-ab5106134394","createdByUserId":"2be36a8b-2361-4694-8d43-6440abdc2df8"}'

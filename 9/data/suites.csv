@@ -1,0 +1,36 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","21","Get file with incorrect file ID","LMS service","Sun Jun 01 19:31:58 GMT 2025","passed","Sun Jun 01 19:31:58 GMT 2025","Validate entity","Files","",""
+"","291","Get file","LMS service","Sun Jun 01 19:31:55 GMT 2025","passed","Sun Jun 01 19:31:55 GMT 2025","Get entity","Files","",""
+"","543","Create file with empty directory","LMS service","Sun Jun 01 19:31:56 GMT 2025","passed","Sun Jun 01 19:31:57 GMT 2025","Validate entity","Files","",""
+"
+        Проверяет обновление упражнения.
+        ","313","Update exercise","LMS service","Sun Jun 01 19:31:50 GMT 2025","passed","Sun Jun 01 19:31:50 GMT 2025","Update entity","Exercises","",""
+"
+        Проверяет обновление курса.
+        ","324","Update course","LMS service","Sun Jun 01 19:31:50 GMT 2025","passed","Sun Jun 01 19:31:50 GMT 2025","Update entity","Courses","",""
+"","519","Login with correct email and password","LMS service","Sun Jun 01 19:31:49 GMT 2025","passed","Sun Jun 01 19:31:49 GMT 2025","Login","Authentication","",""
+"","1101","Create user","LMS service","Sun Jun 01 19:31:55 GMT 2025","passed","Sun Jun 01 19:31:56 GMT 2025","Create entity","Users","",""
+"","835","Create user","LMS service","Sun Jun 01 19:31:57 GMT 2025","passed","Sun Jun 01 19:31:58 GMT 2025","Create entity","Users","",""
+"","542","Get user me","LMS service","Sun Jun 01 19:31:57 GMT 2025","passed","Sun Jun 01 19:31:58 GMT 2025","Get entity","Users","",""
+"
+        Проверяет удаление упражнения.
+        ","608","Delete exercise","LMS service","Sun Jun 01 19:31:52 GMT 2025","passed","Sun Jun 01 19:31:53 GMT 2025","Delete entity","Exercises","",""
+"","572","Delete file","LMS service","Sun Jun 01 19:31:56 GMT 2025","passed","Sun Jun 01 19:31:57 GMT 2025","Delete entity","Files","",""
+"
+        Проверяет получение упражнения по ID.
+        ","21","Get exercise","LMS service","Sun Jun 01 19:31:53 GMT 2025","passed","Sun Jun 01 19:31:53 GMT 2025","Get entity","Exercises","",""
+"","827","Create user","LMS service","Sun Jun 01 19:31:57 GMT 2025","passed","Sun Jun 01 19:31:58 GMT 2025","Create entity","Users","",""
+"","541","Create file","LMS service","Sun Jun 01 19:31:53 GMT 2025","passed","Sun Jun 01 19:31:54 GMT 2025","Create entity","Files","",""
+"
+        Проверяет создание упражнения.
+        ","29","Create exercise","LMS service","Sun Jun 01 19:31:50 GMT 2025","passed","Sun Jun 01 19:31:50 GMT 2025","Create entity","Exercises","",""
+"
+        Проверяет создание курса.
+        ","50","Create course","LMS service","Sun Jun 01 19:31:52 GMT 2025","passed","Sun Jun 01 19:31:52 GMT 2025","Create entity","Courses","",""
+"
+        Проверяет получение списка курсов.
+        ","585","Get courses","LMS service","Sun Jun 01 19:31:51 GMT 2025","passed","Sun Jun 01 19:31:52 GMT 2025","Get entity","Courses","",""
+"","548","Create file with empty filename","LMS service","Sun Jun 01 19:31:54 GMT 2025","passed","Sun Jun 01 19:31:55 GMT 2025","Validate entity","Files","",""
+"
+        Проверяет получение списка упражнений.
+        ","832","Get exercises","LMS service","Sun Jun 01 19:31:54 GMT 2025","passed","Sun Jun 01 19:31:55 GMT 2025","Get entities","Exercises","",""

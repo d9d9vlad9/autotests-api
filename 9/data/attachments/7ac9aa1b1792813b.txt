@@ -1,0 +1,11 @@
+curl -X 'POST' \
+'http://localhost:8000/api/v1/courses' \
+-H 'host: localhost:8000' \
+-H 'accept: */*' \
+-H 'accept-encoding: gzip, deflate' \
+-H 'connection: keep-alive' \
+-H 'user-agent: python-httpx/0.28.1' \
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA2LTAxVDIwOjAxOjUyLjUyMzQ1NyIsInVzZXJfaWQiOiJkOTY3Mjc0Yy1jYTZkLTRiNDItOTMyYy04Yjg5MDZhZGI2MTcifQ.nSBCPJ81z1PGMtA4o1lX02wJKhNX9WzzqF9tVKEvoPo' \
+-H 'content-length: 343' \
+-H 'content-type: application/json' \
+-d '{"title":"Turn on community whether western.","maxScore":63,"minScore":30,"description":"Feeling citizen quality hit woman election hair. Teach or between dog seem too official.\nMovement inside natural.","estimatedTime":"4 weeks","previewFileId":"222e0b73-f09a-4612-b19f-2e5feca7556c","createdByUserId":"d967274c-ca6d-4b42-932c-8b8906adb617"}'

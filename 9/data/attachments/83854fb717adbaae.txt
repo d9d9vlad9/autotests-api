@@ -1,0 +1,11 @@
+curl -X 'POST' \
+'http://localhost:8000/api/v1/courses' \
+-H 'host: localhost:8000' \
+-H 'accept: */*' \
+-H 'accept-encoding: gzip, deflate' \
+-H 'connection: keep-alive' \
+-H 'user-agent: python-httpx/0.28.1' \
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA2LTAxVDIwOjAxOjUzLjUwNjQwMyIsInVzZXJfaWQiOiI0ZDVhZTFkMS04MTg3LTQ2ZGEtYWRmOC01MWQyZDYxMDk1ZWIifQ.CDKubvzMvfjFGUyZf1lW_bs0Vk9o-S0TXKuld4ZQVtQ' \
+-H 'content-length: 344' \
+-H 'content-type: application/json' \
+-d '{"title":"College practice how glass unit.","maxScore":81,"minScore":17,"description":"Face series cover itself another try. Rather several that. Hope strategy class discussion arrive agency want produce.","estimatedTime":"4 weeks","previewFileId":"03d4e43a-d445-4034-95fb-35bc576573cf","createdByUserId":"4d5ae1d1-8187-46da-adf8-51d2d61095eb"}'

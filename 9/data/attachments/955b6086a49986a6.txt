@@ -1,0 +1,20 @@
+INFO     HTTP_LOGGER:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:33 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:33 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:33 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:33 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     BASE_ASSERTIONS:base.py:17 Chek that response status code equals to 200
+INFO     COURSES_ASSERTIONS:courses.py:85 Check create course response
+INFO     BASE_ASSERTIONS:base.py:35 Chek that "title" equals to "But ask bag discussion."
+INFO     BASE_ASSERTIONS:base.py:35 Chek that "max_score" equals to "81"
+INFO     BASE_ASSERTIONS:base.py:35 Chek that "min_score" equals to "17"
+INFO     BASE_ASSERTIONS:base.py:35 Chek that "description" equals to "Possible quite box point security teach. Imagine where address idea.
+Heavy across part several order grow food.
+Say push interview price. Fill control risk back."
+INFO     BASE_ASSERTIONS:base.py:35 Chek that "estimated_time" equals to "7 weeks"
+INFO     BASE_ASSERTIONS:base.py:35 Chek that "preview_file_id" equals to "1b915cd5-8258-477b-bf84-0e566f51987a"
+INFO     BASE_ASSERTIONS:base.py:35 Chek that "created_by_user_id" equals to "3f0d8eb1-e0f2-4896-8c58-c186b930c142"
+INFO     SCHEMA_ASSERTIONS:schema.py:19 Validate JSON schema

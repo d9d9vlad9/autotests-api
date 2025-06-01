@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+'http://localhost:8000/api/v1/courses/aa23a2b3-9609-47a4-acb8-3fd48666abc3' \
+-H 'host: localhost:8000' \
+-H 'accept: */*' \
+-H 'accept-encoding: gzip, deflate' \
+-H 'connection: keep-alive' \
+-H 'user-agent: python-httpx/0.28.1' \
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA2LTAxVDIwOjAxOjQ5LjYxNjk5NiIsInVzZXJfaWQiOiJhZWU1YmRmZi0zYzBiLTRjNTctYWU2Yi01MzUzNDMyNzQwNjYifQ.UYtaHwnOiEeFhvEOgakp1VMQ_PIA8Vwwv70DyCMskv0' \
+-H 'content-length: 219' \
+-H 'content-type: application/json' \
+-d '{"title":"Property find south kid.","maxScore":51,"minScore":18,"description":"Much may south might. Card table face single talk. Plant general get share.\nPhone threat travel surface happen.","estimatedTime":"9 weeks"}'

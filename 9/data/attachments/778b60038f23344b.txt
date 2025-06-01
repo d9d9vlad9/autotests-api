@@ -1,0 +1,19 @@
+INFO     HTTP_LOGGER:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:33 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:33 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:33 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:33 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:25 Make PATCH request to http://localhost:8000/api/v1/courses/aa23a2b3-9609-47a4-acb8-3fd48666abc3
+INFO     HTTP_LOGGER:event_hooks.py:33 Got response 200 OK from http://localhost:8000/api/v1/courses/aa23a2b3-9609-47a4-acb8-3fd48666abc3
+INFO     BASE_ASSERTIONS:base.py:17 Chek that response status code equals to 200
+INFO     COURSES_ASSERTIONS:courses.py:24 Check update course response
+INFO     BASE_ASSERTIONS:base.py:35 Chek that "title" equals to "Property find south kid."
+INFO     BASE_ASSERTIONS:base.py:35 Chek that "max_score" equals to "51"
+INFO     BASE_ASSERTIONS:base.py:35 Chek that "min_score" equals to "18"
+INFO     BASE_ASSERTIONS:base.py:35 Chek that "description" equals to "Much may south might. Card table face single talk. Plant general get share.
+Phone threat travel surface happen."
+INFO     BASE_ASSERTIONS:base.py:35 Chek that "estimated_time" equals to "9 weeks"
+INFO     SCHEMA_ASSERTIONS:schema.py:19 Validate JSON schema

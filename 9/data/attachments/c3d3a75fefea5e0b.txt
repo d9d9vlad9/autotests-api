@@ -1,0 +1,11 @@
+curl -X 'POST' \
+'http://localhost:8000/api/v1/courses' \
+-H 'host: localhost:8000' \
+-H 'accept: */*' \
+-H 'accept-encoding: gzip, deflate' \
+-H 'connection: keep-alive' \
+-H 'user-agent: python-httpx/0.28.1' \
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA2LTAxVDIwOjAxOjUxLjk2OTkwOSIsInVzZXJfaWQiOiIzZjBkOGViMS1lMGYyLTQ4OTYtOGM1OC1jMTg2YjkzMGMxNDIifQ.CDR0aYfFAgfJgqN-OLfDqRutvwoLamo7uuY8hmWHtwM' \
+-H 'content-length: 381' \
+-H 'content-type: application/json' \
+-d '{"title":"But ask bag discussion.","maxScore":81,"minScore":17,"description":"Possible quite box point security teach. Imagine where address idea.\nHeavy across part several order grow food.\nSay push interview price. Fill control risk back.","estimatedTime":"7 weeks","previewFileId":"1b915cd5-8258-477b-bf84-0e566f51987a","createdByUserId":"3f0d8eb1-e0f2-4896-8c58-c186b930c142"}'
