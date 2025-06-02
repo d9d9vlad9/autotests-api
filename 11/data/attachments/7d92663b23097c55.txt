@@ -1,0 +1,11 @@
+curl -X 'POST' \
+'http://localhost:8000/api/v1/courses' \
+-H 'host: localhost:8000' \
+-H 'accept: */*' \
+-H 'accept-encoding: gzip, deflate' \
+-H 'connection: keep-alive' \
+-H 'user-agent: python-httpx/0.28.1' \
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA2LTAyVDE3OjI1OjAzLjQ2ODc2MiIsInVzZXJfaWQiOiIxMzk4OWE1NS1jODliLTQ5YzAtYWY3MS1mOTA0OWY1N2YwNmUifQ.wDOFeBDMyF3Dz4mz3GX5Xn480niMnge2PmqcgeQg6z8' \
+-H 'content-length: 346' \
+-H 'content-type: application/json' \
+-d '{"title":"During during marriage control pull thing.","maxScore":68,"minScore":1,"description":"Skin use baby particular method. Provide mouth late over arrive follow. Prepare along thing fire wall special.","estimatedTime":"3 weeks","previewFileId":"0010bf4c-8e23-448d-a0de-9c91cce66bd6","createdByUserId":"13989a55-c89b-49c0-af71-f9049f57f06e"}'

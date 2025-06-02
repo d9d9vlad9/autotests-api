@@ -1,0 +1,11 @@
+curl -X 'POST' \
+'http://localhost:8000/api/v1/courses' \
+-H 'host: localhost:8000' \
+-H 'accept: */*' \
+-H 'accept-encoding: gzip, deflate' \
+-H 'connection: keep-alive' \
+-H 'user-agent: python-httpx/0.28.1' \
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA2LTAyVDE3OjI1OjA2LjExNDY5MSIsInVzZXJfaWQiOiJmNjkzNzJjYS1jMmM2LTQ0NTUtYThjOS05MTJkZGI0ZWQ5ODEifQ.GK_6hGbtKye67mAzKdrdhxXi1upoEc8pOIikwrA5Oec' \
+-H 'content-length: 400' \
+-H 'content-type: application/json' \
+-d '{"title":"As recognize commercial team water forward.","maxScore":55,"minScore":14,"description":"Rule they beyond beyond spring practice. Instead only prove serve.\nMan laugh though well around officer north them. Market item chance themselves top fact while.","estimatedTime":"7 weeks","previewFileId":"85533613-17ba-413d-ae25-180b97b7dc87","createdByUserId":"f69372ca-c2c6-4455-a8c9-912ddb4ed981"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+'http://localhost:8000/api/v1/exercises' \
+-H 'host: localhost:8000' \
+-H 'accept: */*' \
+-H 'accept-encoding: gzip, deflate' \
+-H 'connection: keep-alive' \
+-H 'user-agent: python-httpx/0.28.1' \
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA2LTAyVDE3OjI1OjA2LjExNDY5MSIsInVzZXJfaWQiOiJmNjkzNzJjYS1jMmM2LTQ0NTUtYThjOS05MTJkZGI0ZWQ5ODEifQ.GK_6hGbtKye67mAzKdrdhxXi1upoEc8pOIikwrA5Oec' \
+-H 'content-length: 373' \
+-H 'content-type: application/json' \
+-d '{"title":"Let war cut cost best thank authority.","courseId":"f0f57744-7247-4b23-b40b-50c0447b5809","maxScore":95,"minScore":5,"orderIndex":2,"description":"Institution probably all attention. Difference imagine buy reduce customer should live easy. Cut anyone us how this from.\nMovement big since certain Congress affect. Yourself town strong.","estimatedTime":"6 weeks"}'

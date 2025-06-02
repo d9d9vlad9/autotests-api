@@ -1,0 +1,11 @@
+curl -X 'POST' \
+'http://localhost:8000/api/v1/courses' \
+-H 'host: localhost:8000' \
+-H 'accept: */*' \
+-H 'accept-encoding: gzip, deflate' \
+-H 'connection: keep-alive' \
+-H 'user-agent: python-httpx/0.28.1' \
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA2LTAyVDE3OjI1OjA1LjAxMDI3OSIsInVzZXJfaWQiOiJhOTg0YTk5MC1hYjNkLTRlZDAtYTFmOC0wZmU1NTkyMDkzZmMifQ.NiDoBLIi7Rk2nJkrPr5lyUHpJCEksHAkrWe5-TKkqf4' \
+-H 'content-length: 341' \
+-H 'content-type: application/json' \
+-d '{"title":"Tax receive agreement will history.","maxScore":53,"minScore":9,"description":"Scene clearly open treat east. Above interview western than new middle. Finish floor process look business what.","estimatedTime":"5 weeks","previewFileId":"43c96c87-835d-4dd9-9f0a-ce6f9e512886","createdByUserId":"a984a990-ab3d-4ed0-a1f8-0fe5592093fc"}'

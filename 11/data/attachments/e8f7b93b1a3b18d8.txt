@@ -1,0 +1,26 @@
+INFO     HTTP_LOGGER:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:33 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:33 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:33 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:33 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:33 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:25 Make GET request to http://localhost:8000/api/v1/exercises?courseId=f0f57744-7247-4b23-b40b-50c0447b5809
+INFO     HTTP_LOGGER:event_hooks.py:33 Got response 200 OK from http://localhost:8000/api/v1/exercises?courseId=f0f57744-7247-4b23-b40b-50c0447b5809
+INFO     BASE_ASSERTIONS:base.py:17 Chek that response status code equals to 200
+INFO     EXERCISE_ASSERTIONS:exercises.py:117 Check get exercises response
+INFO     BASE_ASSERTIONS:base.py:69 Chek that length of "courses" equals to "1"
+INFO     EXERCISE_ASSERTIONS:exercises.py:46 Check exercise
+INFO     BASE_ASSERTIONS:base.py:35 Chek that "id" equals to "a2a22266-1546-47df-8230-0eed8befba2b"
+INFO     BASE_ASSERTIONS:base.py:35 Chek that "title" equals to "Let war cut cost best thank authority."
+INFO     BASE_ASSERTIONS:base.py:35 Chek that "courseId" equals to "f0f57744-7247-4b23-b40b-50c0447b5809"
+INFO     BASE_ASSERTIONS:base.py:35 Chek that "maxScore" equals to "95"
+INFO     BASE_ASSERTIONS:base.py:35 Chek that "minScore" equals to "5"
+INFO     BASE_ASSERTIONS:base.py:35 Chek that "orderIndex" equals to "2"
+INFO     BASE_ASSERTIONS:base.py:35 Chek that "description" equals to "Institution probably all attention. Difference imagine buy reduce customer should live easy. Cut anyone us how this from.
+Movement big since certain Congress affect. Yourself town strong."
+INFO     BASE_ASSERTIONS:base.py:35 Chek that "estimatedTime" equals to "6 weeks"
+INFO     SCHEMA_ASSERTIONS:schema.py:19 Validate JSON schema

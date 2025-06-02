@@ -1,0 +1,11 @@
+curl -X 'POST' \
+'http://localhost:8000/api/v1/courses' \
+-H 'host: localhost:8000' \
+-H 'accept: */*' \
+-H 'accept-encoding: gzip, deflate' \
+-H 'connection: keep-alive' \
+-H 'user-agent: python-httpx/0.28.1' \
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA2LTAyVDE3OjI1OjAyLjYyMDkwNyIsInVzZXJfaWQiOiIzNDMzYTNmNi0wZTk2LTQyZWItOWQyMy0zNTM2Mzk0OGRiNzQifQ.8J-7w0ZcmJeSI3lTOzpPoXesgEVf0TO6XlbCHo7HRkY' \
+-H 'content-length: 385' \
+-H 'content-type: application/json' \
+-d '{"title":"Long economy work group truth.","maxScore":84,"minScore":11,"description":"Condition economic if fact travel measure show size. Time option yeah.\nArtist really nice hot million try. Cost some if guess. Involve life light clearly role.","estimatedTime":"2 weeks","previewFileId":"1a0fa6ee-abb9-4314-afc9-818e7390a355","createdByUserId":"3433a3f6-0e96-42eb-9d23-35363948db74"}'

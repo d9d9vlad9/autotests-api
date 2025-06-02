@@ -1,0 +1,11 @@
+curl -X 'POST' \
+'http://localhost:8000/api/v1/courses' \
+-H 'host: localhost:8000' \
+-H 'accept: */*' \
+-H 'accept-encoding: gzip, deflate' \
+-H 'connection: keep-alive' \
+-H 'user-agent: python-httpx/0.28.1' \
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA2LTAyVDE3OjI1OjAzLjc1MDYxOSIsInVzZXJfaWQiOiI2ODljMWI1ZS1hMmFhLTQ5OGYtODY1Yy1hMzcyZGFmNTUwYWQifQ.iO0WalnX3EtvXSoucKQ0tQwQEnv5W3C34QF46yTkE3k' \
+-H 'content-length: 357' \
+-H 'content-type: application/json' \
+-d '{"title":"Dog adult quickly usually.","maxScore":56,"minScore":11,"description":"Study force and wide. Film economic pull offer.\nJust report soldier hear deep rest ahead material. Without fish suffer blue model hour.","estimatedTime":"9 weeks","previewFileId":"bdb41237-561a-42eb-9f6d-77c68d8746f7","createdByUserId":"689c1b5e-a2aa-498f-865c-a372daf550ad"}'

@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+'http://localhost:8000/api/v1/courses/bee64d3a-6386-4d04-8f3c-6ebfdaae6690' \
+-H 'host: localhost:8000' \
+-H 'accept: */*' \
+-H 'accept-encoding: gzip, deflate' \
+-H 'connection: keep-alive' \
+-H 'user-agent: python-httpx/0.28.1' \
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA2LTAyVDE3OjI1OjAzLjE3MjU1MSIsInVzZXJfaWQiOiIyZTI1ZGM1Zi0zODYyLTQ4N2YtOGI2Yi0wYWFkNjg2MmNmNTUifQ.4bafQEhdXr12QI7jK5LDuI3y6ByuZqb0QE9KY_fKbnQ' \
+-H 'content-length: 338' \
+-H 'content-type: application/json' \
+-d '{"title":"First compare statement compare debate most simply guess.","maxScore":53,"minScore":26,"description":"Together region health might yard claim green debate. Remain ok rise although. Address future start himself.\nMinute team war read force because. Result although road material here father professor.","estimatedTime":"2 weeks"}'

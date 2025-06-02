@@ -1,0 +1,11 @@
+curl -X 'POST' \
+'http://localhost:8000/api/v1/courses' \
+-H 'host: localhost:8000' \
+-H 'accept: */*' \
+-H 'accept-encoding: gzip, deflate' \
+-H 'connection: keep-alive' \
+-H 'user-agent: python-httpx/0.28.1' \
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA2LTAyVDE3OjI1OjAzLjE3MjU1MSIsInVzZXJfaWQiOiIyZTI1ZGM1Zi0zODYyLTQ4N2YtOGI2Yi0wYWFkNjg2MmNmNTUifQ.4bafQEhdXr12QI7jK5LDuI3y6ByuZqb0QE9KY_fKbnQ' \
+-H 'content-length: 367' \
+-H 'content-type: application/json' \
+-d '{"title":"Another name employee happy assume.","maxScore":96,"minScore":7,"description":"Make tax case full measure own article. Camera wrong anyone example than maintain. Worry exactly line remember from young public central.","estimatedTime":"10 weeks","previewFileId":"d2bda9e1-1916-4197-9ac7-5d8f165a5ff8","createdByUserId":"2e25dc5f-3862-487f-8b6b-0aad6862cf55"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+'http://localhost:8000/api/v1/courses' \
+-H 'host: localhost:8000' \
+-H 'accept: */*' \
+-H 'accept-encoding: gzip, deflate' \
+-H 'connection: keep-alive' \
+-H 'user-agent: python-httpx/0.28.1' \
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA2LTAyVDE3OjI1OjA1LjgzNTk3OSIsInVzZXJfaWQiOiJlZTllN2Q4NS04MzgwLTQwODMtYWQ0Yy1iYzAxNTkyZWM3OGQifQ.3c72khE55nEMNz1bFRiswujp76t9Q63Z27MTcbKNiAk' \
+-H 'content-length: 406' \
+-H 'content-type: application/json' \
+-d '{"title":"Environmental discover buy.","maxScore":64,"minScore":9,"description":"Live want call girl someone test speak. Ago until free knowledge. Decide series daughter mention friend build include.\nCondition ground activity human. Bar grow catch make window time.","estimatedTime":"8 weeks","previewFileId":"62cadb8d-ced9-4651-b5a4-6ccc4507a51b","createdByUserId":"ee9e7d85-8380-4083-ad4c-bc01592ec78d"}'
