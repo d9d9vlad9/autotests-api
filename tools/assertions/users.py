@@ -1,6 +1,5 @@
 import allure
-from clients.users.users_schema import CreateUserRequestSchema, CreateUserResponseSchema, GetUserResponseSchema
-from pydantic_basics import UserSchema
+from clients.users.users_schema import CreateUserRequestSchema, CreateUserResponseSchema, GetUserResponseSchema, UserSchema
 from tools.assertions.base import assert_equal
 from tools.logger import get_logger
 
